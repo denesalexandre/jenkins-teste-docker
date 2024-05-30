@@ -2,15 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE_NAME = 'meu-usuario/meu-repositorio' // Nome da imagem Docker
-        DOCKER_TAG = 'latest' // Tag da imagem
+        DOCKER_IMAGE_NAME = 'meu-usuario/meu-repositorio'
+        DOCKER_TAG = 'latest'
     }
 
     stages {
         stage('Preparar Ambiente') {
             steps {
                 script {
-                    // Exemplo de preparação de ambiente, se necessário
                     echo "Preparando ambiente..."
                 }
             }
